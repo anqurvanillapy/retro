@@ -87,7 +87,7 @@ class Bookmarker {
     'main'
   ].map(id => document.getElementById(id))
 
-  const res = await fetch('/contents.md')
+  const res = await fetch('contents.md')
   const body = await res.text()
   const lastModified = res.headers.get('last-modified')
 
